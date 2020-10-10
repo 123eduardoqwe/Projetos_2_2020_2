@@ -1,16 +1,24 @@
 Relatório semanal
 
+2020-09-18 - aula06 desenvolvimento do projeto
+Relatar O QUE FOI FEITO:
+- Instalação das ferramentas necessárias para o desenvolvimento do trabalho
+- Finalização da proposta comercial
+- Apresentação do Pitch
+
+Relatar QUEM FOI O RESPONSÁVEL
+- Eduardo e Rafael
+- Rafael
+- Eduardo
 
 2020-09-25 - aula06 desenvolvimento do projeto
 Relatar O QUE FOI FEITO:
--
--
--
+- Preparação do ambiente para o desenvolvimento da aplicação
 
 Relatar QUEM FOI O RESPONSÁVEL
--
--
--2020-10-02 - aula07 desenvolvimento do projeto
+- Rafael
+
+2020-10-02 - aula07 desenvolvimento do projeto
 Relatar O QUE FOI FEITO:
 -
 -
@@ -19,7 +27,15 @@ Relatar O QUE FOI FEITO:
 Relatar QUEM FOI O RESPONSÁVEL
 -
 -
--2020-10-09 - aula08 desenvolvimento do projeto
+-
+2020-10-09 - aula08 desenvolvimento do projeto
+Relatar O QUE FOI FEITO:
+- Começo do desenvolvimento do frontend e backend
+
+Relatar QUEM FOI O RESPONSÁVEL
+- Rafael
+
+2020-10-16 - aula09 Avaliacao1
 Relatar O QUE FOI FEITO:
 -
 -
@@ -28,7 +44,8 @@ Relatar O QUE FOI FEITO:
 Relatar QUEM FOI O RESPONSÁVEL
 -
 -
--2020-10-16 - aula09 Avaliacao1
+-
+2020-10-23 - aula10 desenvolvimento do projeto
 Relatar O QUE FOI FEITO:
 -
 -
@@ -37,7 +54,8 @@ Relatar O QUE FOI FEITO:
 Relatar QUEM FOI O RESPONSÁVEL
 -
 -
--2020-10-23 - aula10 desenvolvimento do projeto
+-
+2020-10-30 - aula11 desenvolvimento do projeto
 Relatar O QUE FOI FEITO:
 -
 -
@@ -46,7 +64,8 @@ Relatar O QUE FOI FEITO:
 Relatar QUEM FOI O RESPONSÁVEL
 -
 -
--2020-10-30 - aula11 desenvolvimento do projeto
+-
+2020-11-06 - aula12 desenvolvimento do projeto
 Relatar O QUE FOI FEITO:
 -
 -
@@ -55,7 +74,8 @@ Relatar O QUE FOI FEITO:
 Relatar QUEM FOI O RESPONSÁVEL
 -
 -
--2020-11-06 - aula12 desenvolvimento do projeto
+-
+2020-11-13 - aula13 Avaliacao2
 Relatar O QUE FOI FEITO:
 -
 -
@@ -64,7 +84,8 @@ Relatar O QUE FOI FEITO:
 Relatar QUEM FOI O RESPONSÁVEL
 -
 -
--2020-11-13 - aula13 Avaliacao2
+-
+2020-11-20 - aula14 desenvolvimento do projeto
 Relatar O QUE FOI FEITO:
 -
 -
@@ -73,15 +94,8 @@ Relatar O QUE FOI FEITO:
 Relatar QUEM FOI O RESPONSÁVEL
 -
 -
--2020-11-20 - aula14 desenvolvimento do projeto
-Relatar O QUE FOI FEITO:
 -
--
--
-
-Relatar QUEM FOI O RESPONSÁVEL
--
--
--2020-11-27 - aula15 Apresentação ao prof e produção video
+2020-11-27 - aula15 Apresentação ao prof e produção video
 Publicação do vídeo no repositório do GIT
-2020-12-04 - aula16 ApresentacaoFinal a turma
+
+2020-12-04 - aula16 ApresentacaoFinal a turma
