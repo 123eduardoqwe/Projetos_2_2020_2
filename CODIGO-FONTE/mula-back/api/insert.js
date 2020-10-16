@@ -4,7 +4,7 @@ let cachedDB = null;
 
 const connectToDB = async () => {
   if (cachedDB) return cachedDB;
-  const client = await MongoClient.connect('<DB_URI>', { useNewUrlParser: true });
+  const client = await MongoClient.connect(process.env.MULA_DB_URI, { useNewUrlParser: true });
   const db = await client.db('mula');
   cachedDB = db;
   return db;
