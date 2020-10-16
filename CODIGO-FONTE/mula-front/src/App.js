@@ -1,10 +1,17 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core'; 
-import './App.css';
-import './components/TripsList'
 import TripsList from './components/TripsList';
+import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { withStyles } from "@material-ui/core/styles";
 
 const fetch = require('node-fetch');
+
+const styles = theme => ({
+  root: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+});
 
 class App extends React.Component {
   constructor(props) {
@@ -44,6 +51,7 @@ class App extends React.Component {
   }
 
   render() {
+    const { classes } = this.props;
     return (
       <div>
         <AppBar position="static">
@@ -53,7 +61,7 @@ class App extends React.Component {
             </Typography>
           </Toolbar>
         </AppBar>
-        <div className="howdy">
+        <div className={classes.root}>
           <TripsList />
         </div>
       </div>
@@ -61,4 +69,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withStyles(styles)(App);

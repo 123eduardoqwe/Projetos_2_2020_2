@@ -1,14 +1,24 @@
 import React from 'react';
 import Entry from './Entry';
-import './TripsList.css';
+import { withStyles } from "@material-ui/core/styles";
 
 const fetch = require('node-fetch');
+
+const styles = theme => ({
+  root: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    maxWidth: '100vw'
+  }
+});
 
 class TripsList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      ahow: <p>Loadubgs</p>
+      content: <p>Loadubgs</p>
     };
   }
 
@@ -17,18 +27,19 @@ class TripsList extends React.Component {
       .then(response => response.json())
       .then(data => {
         console.log(data);
-        data = data.map(a => <Entry data={a}/>);
-        return this.setState({ ahow: data })
+        data = data.map(a => <Entry data={a} />);
+        return this.setState({ content: data })
       });
   }
 
   render() {
+    const { classes } = this.props;
     return (
-      <div className="list">
-        {this.state.ahow}
+      <div className={classes.root}>
+        {this.state.content}
       </div>
     );
   }
 }
 
-export default TripsList;
+export default withStyles(styles)(TripsList);
