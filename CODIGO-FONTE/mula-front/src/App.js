@@ -1,7 +1,10 @@
 import React from 'react';
 import TripsList from './components/TripsList';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import NewEntry from './components/NewEntry';
+import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import { withStyles } from "@material-ui/core/styles";
+import MenuIcon from '@material-ui/icons/Menu';
+import IconButton from '@material-ui/core/IconButton';
 
 const fetch = require('node-fetch');
 
@@ -10,7 +13,13 @@ const styles = theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-  }
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
 });
 
 class App extends React.Component {
@@ -18,11 +27,14 @@ class App extends React.Component {
     super(props);
     this.state = {
       value: [],
-      text: ''
+      text: '',
+      body: <TripsList />,
+      isNew: false
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleAddClick = this.handleAddClick.bind(this);
   }
 
   componentDidMount() {
@@ -50,19 +62,36 @@ class App extends React.Component {
     return this.setState({ value: temp, text: '' });
   }
 
+  handleLogoClick() {
+    alert(1);
+  }
+
+  handleAddClick() {
+    this.state.isNew = !this.state.isNew;
+    return this.setState({ body: this.state.isNew ? <NewEntry /> : <TripsList /> });
+  }
+
   render() {
     const { classes } = this.props;
     return (
       <div>
         <AppBar position="static">
           <Toolbar variant="dense">
-            <Typography variant="h6" color="inherit">
+            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" style={{ cursor: 'pointer' }} onClick={this.handleLogoClick}>
               Mula
             </Typography>
+            <div className={classes.title} ></div>
+            <Button color="inherit" onClick={this.handleAddClick}>
+            <i class="fa fa-plus-circle"></i>
+            </Button>
+            <Button color="inherit">Login</Button>
           </Toolbar>
         </AppBar>
         <div className={classes.root}>
-          <TripsList />
+          {this.state.body}
         </div>
       </div>
     );

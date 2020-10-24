@@ -59,8 +59,8 @@ class Entry extends React.Component {
                   </Typography>
                 </Grid>
               </Grid>
-              <Grid item direction="column">
-                <Typography variant="caption">{this.state.data.dateStart} <i class="fa fa-long-arrow-right"></i> {this.state.data.dateEnd}</Typography>
+              <Grid item>
+                <Typography variant="caption">{this.state.data.departureDate} <i class="fa fa-long-arrow-right"></i> {this.state.data.returnDate}</Typography>
               </Grid>
             </Grid>
           </Grid>
